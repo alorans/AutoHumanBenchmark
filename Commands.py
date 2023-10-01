@@ -57,7 +57,9 @@ def set_login(logged_in):
             with open('login.txt', 'w') as login_file:
                 login_file.write(username + '\n' + password)
             break
-        elif save != 'n':
+        elif save == 'n':
+            break
+        else:
             print('Please enter either "y" or "n".')
 
 
