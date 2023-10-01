@@ -1,17 +1,29 @@
 ########################################################################################################################
+AutoHumanBenchmark
+
+A simple Python command line to automate tests on humanbenchmark.com using Selenium.
+
+
+########################################################################################################################
 Installation
 
 
 To install, run:
 
-    git clone https://github.com/etc
+    git clone https://github.com/alorans/AutoHumanBenchmark.git
+    cd AutoHumanBenchmark
+    python Install.py
 
-Or simply download the repository and save it in an empty folder.
+Or simply download the repository and save it in an empty folder, then run 'Install.py'.
 
 
 To start the program, run:
 
-    python3 HumanBenchmark.py
+    python HumanBenchmark.py
+
+
+NOTE: On some systems, 'python3' is used instead of 'python' to execute python files.
+
 
 On startup, the program
 - installs & updates its PIP dependencies.
@@ -25,7 +37,7 @@ Requirements:
 - Selenium (>= 4.0.0) **
 - Webdriver-manager (>= 4.0.0) **
 
-** means that the requirement is automatically maintained.
+** requirements are automatically maintained.
 
 
 ########################################################################################################################

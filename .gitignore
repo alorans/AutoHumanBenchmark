@@ -1,0 +1,11 @@
+# Ignore PyCharm '.idea' folder
+/.idea
+
+# Do not push login information in login.txt
+login.txt
+
+/.git
+
+/__pycache__
+
+/.DS_Store

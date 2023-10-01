@@ -56,7 +56,7 @@ def run_chimp_test(browser):
         for square_index in range(score + 4):
             browser.find_element(By.XPATH, squares[square_index + 1]).click()
         # click continue
-        if score < 41:
+        if score + 5 < 41:
             wait_for_load('//*[@id="root"]/div/div[4]/div[1]/div/div[1]/div[3]/button').click()
         print("\r" + " " * 50 + "\r", end='', flush=True)
         print(f'\rScore: {score + 5} of {target_score}', end='', flush=True)

@@ -85,7 +85,7 @@ def run_typing(browser):
                 pass
 
     # print result
-    print('Result: {}'.format(wait_for_load('//*[@id="root"]/div/div[4]/div[1]/div/div[2]/h1').text))
+    print('\nResult: {}'.format(wait_for_load('//*[@id="root"]/div/div[4]/div[1]/div/div[2]/h1').text))
 
     # save score
     while True:

@@ -1,4 +1,4 @@
-import importlib
+# import importlib
 import subprocess
 
 
@@ -10,7 +10,7 @@ def import_req():
             for statement in output:
                 if not statement.startswith('Requirement already satisfied: '):
                     print(statement)
-            print(f"{package.capitalize()} and its dependencies have been successfully checked for upgrades.")
+            print(f"{package.capitalize()} and its dependencies have been successfully installed/checked for upgrades.")
         except subprocess.CalledProcessError as e:
             print(f"Experienced pip error upgrading {package}: {e}")
 
@@ -21,4 +21,8 @@ def import_req():
 
     for module in requirements:
         pip_install(module)
-        importlib.import_module(requirements[module])
+        # importlib.import_module(requirements[module])
+
+
+if __name__ == '__main__':
+    import_req()

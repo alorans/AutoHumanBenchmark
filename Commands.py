@@ -45,12 +45,20 @@ def log_out(browser, logged_in):
     return False
 
 
-def set_login():
+def set_login(logged_in):
+    if logged_in:
+        print('Must be logged out to set new login.')
+        return
     username = input('Username: ')
     password = input('Password: ')
-    if input('Save new login? (y/n): ').lower() == 'y':
-        with open('login.txt', 'w') as login_file:
-            login_file.write(username + '\n' + password)
+    while True:
+        save = input('Save new login? (y/n): ').lower()
+        if save == 'y':
+            with open('login.txt', 'w') as login_file:
+                login_file.write(username + '\n' + password)
+            break
+        elif save != 'n':
+            print('Please enter either "y" or "n".')
 
 
 def get_login():

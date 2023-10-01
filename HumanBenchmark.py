@@ -1,17 +1,17 @@
-from Typing import run_typing
-from Sequence import run_sequence
-from Aim import run_aim
-from ReactionTime import run_reaction_time
-from NumberMemory import run_number_memory
-from ChimpTest import run_chimp_test
-from VisualMemory import run_visual_memory
-from VerbalMemory import run_verbal_memory
+from Tests.Typing import run_typing
+from Tests.Sequence import run_sequence
+from Tests.Aim import run_aim
+from Tests.ReactionTime import run_reaction_time
+from Tests.NumberMemory import run_number_memory
+from Tests.ChimpTest import run_chimp_test
+from Tests.VisualMemory import run_visual_memory
+from Tests.VerbalMemory import run_verbal_memory
 import Commands
-import Import
+import Install
 
 if __name__ == '__main__':
     # initialize imports
-    Import.import_req()
+    Install.import_req()
 
     # open web browser
     browser = Commands.new_browser()
@@ -37,7 +37,7 @@ if __name__ == '__main__':
                 case 'log out':
                     logged_in = Commands.log_out(browser, logged_in)
                 case 'set login':
-                    Commands.set_login()
+                    Commands.set_login(logged_in)
                 case 'get login':
                     Commands.get_login()
                 case 'get average scores':
