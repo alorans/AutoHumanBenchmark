@@ -39,12 +39,8 @@ NOTE: On some systems, 'python3' is used instead of 'python' to execute python f
 - **Get login:** Prints the username and password from 'login.txt'.
 - **Log in:** Uses the login information in 'login.txt' to log in to Human Benchmark.
 - **Log out:** Logs out from Human Benchmark.
-
-
 - **Get average scores:** Prints the averages scores on all Human Benchmark tests for the current account. (Can be guest account)
 - **New browser:** Closes the current browser window and opens a new one, after prompting the user to select visible or headless (invisible) mode.
-
-
 - **Help:** Prints a list of commands.
 - **Exit:** Closes the browser window and exits the program.
 
