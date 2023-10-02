@@ -1,4 +1,3 @@
-# import importlib
 import subprocess
 
 
@@ -21,7 +20,6 @@ def import_req():
 
     for module in requirements:
         pip_install(module)
-        # importlib.import_module(requirements[module])
 
 
 if __name__ == '__main__':
